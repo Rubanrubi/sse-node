@@ -5,7 +5,6 @@ In Angular how to consume SSE ?
 
 ## Create a service file in that file add the below function
 
-  
   getServerSentEvent(url: string): Observable<any> {
     return new Observable(observer => {
       const eventSource = new EventSource(url);
